@@ -1,2 +1,3 @@
 # WorryFreeBakingWebApp
 Final web application: SWDV691
+There is currently a shortage of reliable baking products for food allergy sensitive people online and in grocery stores. These products are considered rare, and usually require a shopper to go to several specialty food stores in order to find products that suit their food allergy needs. By creating the “Worry Free Baking” web application this will eliminate the issue of finding these products, as well as having to spend time traveling to different specialty food stores. Fortunately, the Worry Free Baking web application solves more than just a lack of allergy free products, but also shows users how to use those products in popular recipes.  
