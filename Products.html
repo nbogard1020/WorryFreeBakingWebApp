@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worry Free Baking</title>
+
+    <link href="/ui/css/oreillybs-3.css" rel="stylesheet">
+	<link href="/WorryFreeBaking.css" rel="stylesheet">
+
+	 
+<style>
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+			
+	/* Medium devices (landscape tablets, 768px and up) */
+	@media only screen and (min-width: 768px) {
+		.container-ad-box p {
+			height: 130px;	
+			}
+		}
+		
+	/* Large devices (laptops/desktops, 992px and up) */
+	@media only screen and (min-width: 992px) {
+		.container-ad-box p {				
+			height: 95px;		
+		}
+	}
+
+	/* Extra large devices (large laptops and desktops, 1200px and up) */
+	@media only screen and (min-width: 1200px) {
+		.container-ad-box p {
+			height: auto;		
+		}  
+	}		
+</style>
+</head>
+  
+<body>
+
+<div class="container-fluid">
+	
+	<div class="row-fluid">	
+		<div class="col-sm-3 mid">
+			<img class="img img-responsive img-center" src="/Images/Logo.jpg"/>
+		</div>
+		<div class="col-sm-9 topnav">
+		  <a class="active" href="#home">Products</a>
+		  <a href="#news">Recipes</a>
+		  <a href="#contact">Learn</a>
+		  <a href="#about">About Us</a>
+		  <a href="#about">Login</a>
+		   <input type="text" placeholder="Search..">
+		</div>
+	</div>	
+
+	<div class="row">
+			
+		
+	<!-- next row -->
+	<div class="row addbottommargin mid ">
+		
+		<div class="col-xs-6 col-sm-3  img-center">
+			<img class="img-one ModalContainer shadow OrderItemImg-wide img-responsive OrderItemImg" onclick="onImage(this)"  src="/Images/CoconutFlour.jpg"/>
+				<p><b>Coconut Flour</b>
+		</div>
+		<div class="col-xs-6 col-sm-3  img-center">
+			<img class="img-one  ModalContainer shadow OrderItemImg-wide img-responsive OrderItemImg" onclick="onImage(this)" src="/Images/AlmondFlour.jpg"/>
+				<p><b>Almond Milk</b>
+		</div>
+		<div class="col-xs-6 col-sm-3  img-center">
+			<img class="img-one  ModalContainer shadow OrderItemImg-wide img-responsive OrderItemImg" onclick="onImage(this)"  src="/Images/SteviaFlour.jpg"/>
+				<p><b>Stevia</b></p>
+		</div>
+		<div class="col-xs-6 col-sm-3 img-center addbottommargin ">
+			<img class="img-one ModalContainer shadow OrderItemImg-wide img-responsive OrderItemImg" onclick="onImage(this)"  src="/Images/AlmondFlour.jpg"/>
+				<p><b>ALmond Floud</b></p>
+		</div>
+	</div>
+	
+	
+	<!-- next row -->
+	<div class="row addbottommargin mid ">
+		
+		<div class="col-xs-6 col-sm-3  img-center">
+			<img class="img-one ModalContainer shadow OrderItemImg-wide img-responsive OrderItemImg" onclick="onImage(this)"  src="/Images/AppleSauce.jpg"/>
+				<p><b>Apple Sauce</b></p>	
+		</div>
+		<div class="col-xs-6 col-sm-3  img-center">
+			<img class="img-one ModalContainer shadow OrderItemImg-wide img-responsive OrderItemImg" onclick="onImage(this)" src="/Images/DairyFreeYogurt.jpg"/>
+				<p><b>Dairy Free Yogurt</b></p>
+		</div>
+		<div class="col-xs-6 col-sm-3  img-center">
+			<img  class="img-two ModalContainer shadow OrderItemImg-wide img-responsive OrderItemImg" onclick="onImage(this)" src="/Images/CoconutSugar.jpg"/>
+				<p><b>Coconut Sugar</b></p>
+		</div>
+		<div class="col-xs-6 col-sm-3 img-center addbottommargin ">
+			<img class="img-one  ModalContainer shadow OrderItemImg-wide img-responsive OrderItemImg" onclick="onImage(this)"  src="/Images/GlutenFreeFlour.jpg"/>
+				<p><b>Gluten Free Flour</b></p>
+		</div>
+	</div>
+
+
+	
+		<!-- Top of Page button -->
+		<div class="pull-right  addbottommargin"> 
+			<a class="btn btn-primary btn-md addbottommargin" href="#TopOfPage" role="button">
+				Top of page <span class="glyphicon glyphicon-arrow-up"></span></a>
+		</div>	
+		<!--End Top of Page Button-->
+		
+          <!-- IMG ModalDEF -->
+            <div id="ModalDEF" class="modal">
+ 
+                    <!-- Modal Content (The Image) -->
+                     
+                    <img class="modal-content img-responsive" alt="" src="/wcm/teamnet/images/common/pixel.png" id="img01">
+   
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    <div class="caption addbottommargin addtopmargin"><small class="close2" onclick="ModalDEF.style.display='none'">(close)</small></div>
+                     <!-- The Close Button -->
+                    <span class="close" onclick="ModalDEF.style.display='none'">×</span>
+            </div>
+            <script src="/wcm/Webmaster/Resources/modal.js"></script>
+        <!--/////////////////////////////////-->	
+	
+</div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Recent Orders</title>
+    <link href="/ui/css/oreillybs-3.css" rel="stylesheet">
+	<link href="/WorryFreeBaking.css" rel="stylesheet">
+
+	
+	<style>
+		.item-line3 {
+			margin: 0 0 15px;
+			background: #ffffff repeat scroll 0 0;
+			
+			padding: 0 5px;
+			border: 1px solid #CCCCCC;
+			border-radius: 4px;
+			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+			}
+		.container-ad-box p {
+			font-weight: 500;
+			font-size: 85%;
+			line-height:15pt;
+			height:60px;
+			}
+		.no-overlap {
+			
+			white-space: initial;
+			overflow: auto;
+			position: relative;	
+			}
+	/* Extra small devices (phones, 600px and down) */
+		@media only screen and (max-width: 600px) {
+		.container-ad-box p {				
+			height: 50px;
+				}
+			}
+	/* Small devices (portrait tablets and large phones, 600px and up) */
+		@media only screen and (min-width: 600px) {
+		.container-ad-box p {				
+			height: 45px;
+				}
+			}
+
+	/* Medium devices (landscape tablets, 768px and up) */
+		@media only screen and (min-width: 768px) {
+		.container-ad-box p {
+			height: 60px;
+				}
+			}
+
+	/* Large devices (laptops/desktops, 992px and up) */
+		@media only screen and (min-width: 992px) {
+			.container-ad-box p {				
+			height: auto;
+				}
+			}
+
+	/* Extra large devices (large laptops and desktops, 1200px and up) */
+		@media only screen and (min-width: 1200px) {
+			.container-ad-box p {
+			height: auto;
+				}    
+			}
+	</style>
+</head>
+   
+<body>
+
+<div class="container-fluid">
+	<div class="row">	
+		<div class="col-sm-12 block-padding">
+			<h1 class="titleName header">Recent Orders</h1>
+		</div> 
+			
+		<div class="col-sm-3 block-padding">
+				
+				<h3 class="title-header green mt10">Helpful Links</h3>
+					<ul class="list list-unstyled lh20 pl20 item-line3">
+						<li class="pt10"><i class="glyphicon glyphicon-lock"> </i>	<a href="/Home/main/?path=.myheader.departments.internalcomm2.id001865"> 
+							Previous Orders</a></li>
+						<li><i class="glyphicon glyphicon-lock"> </i>	<a href="/Home/main/?path=.myheader.corplibrary.eforms.alleforms.CorporateConnectionSubmission"> 
+							Account Information</a></li>	
+					</ul>
+			
+			</div>
+				<div class="col-sm-9 row addbottommargin mid ">
+		
+					<div class="col-xs-6 col-sm-3  img-center">
+						<img class="img-one ModalContainer shadow OrderItemImg-wide img-responsive OrderItemImg" onclick="onImage(this)"  src="/Images/CoconutFlour.jpg"/>
+							<p><b>Coconut Flour</b>
+					</div>
+					<div class="col-xs-6 col-sm-3  img-center">
+						<img class="img-one  ModalContainer shadow OrderItemImg-wide img-responsive OrderItemImg" onclick="onImage(this)" src="/Images/AlmondFlour.jpg"/>
+							<p><b>Almond Milk</b>
+					</div>
+					<div class="col-xs-6 col-sm-3  img-center">
+						<img class="img-one  ModalContainer shadow OrderItemImg-wide img-responsive OrderItemImg" onclick="onImage(this)"  src="/Images/SteviaFlour.jpg"/>
+							<p><b>Stevia</b></p>
+					</div>
+					<div class="col-xs-6 col-sm-3 img-center addbottommargin ">
+						<img class="img-one ModalContainer shadow OrderItemImg-wide img-responsive OrderItemImg" onclick="onImage(this)"  src="/Images/AlmondFlour.jpg"/>
+							<p><b>ALmond Floud</b></p>
+					</div>
+				</div>
+				</div>
+		</div>
+	</div>	
+</div>	 
+</body>
+</html>
