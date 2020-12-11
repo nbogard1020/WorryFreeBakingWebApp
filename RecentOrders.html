@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Recently Baked</title>
+	<title>Recent Orders</title>
 	<link href="WorryFreeBaking.css" rel="stylesheet">
 
 	<style>
@@ -88,31 +88,46 @@ body {
 		</div>
 	</div>	
 		
-		<div class="row">			
-		
-			<div class="col-sm-12">			
 
-				<table class="table table-condensed table-striped">
-					<tr>
-						<th style="width: 75%">Name</th>
-						<th>Rating</th>
-					</tr>
-					
-					<tr><td><a href="">Blondies</a></td><td>3 Stars</td></tr>
-					<tr><td><a href="">Birthday Cake</a></td><td>5 Stars</td></tr>
-					<tr><td><a href="">Fudgy Cookies</a></td><td>4 Stars</td></tr>
-					<tr><td><a href="">Apple Pie</a></td><td>2 Stars</td></tr>
-					<tr><td><a href="">Buckeyes</a></td><td>3 Stars</td></tr>
-					<tr><td><a href="">Almond Butter Brownies</a></td><td>5 Stars</td></tr>
-					
-				</table>
-				<br/>
+<div class="container-fluid">
+	<div class="row">	
+		<div class="col-sm-12 block-padding">
+			<h1 class="titleName header">Recent Orders</h1>
+		</div> 
 			
+		<div class="col-sm-3 block-padding">
 				
+				<h3 class="title-header green mt10">Helpful Links</h3>
+					<ul class="list list-unstyled lh20 pl20 item-line3">
+						<li class="pt10"><i class="glyphicon glyphicon-lock"> </i>	<a href=""> 
+							Previous Orders</a></li>
+						<li><i class="glyphicon glyphicon-lock"> </i>	<a href=""> 
+							Account Information</a></li>	
+					</ul>
+			
+			</div>
+				<div class="col-sm-9 row addbottommargin mid ">
+		
+					<div class="col-xs-6 col-sm-3  img-center">
+						<img class="img img-contacts img-responsive" onclick="onImage(this)"  src="Images/CoconutFlour.jpg"/>
+							<p><b>Coconut Flour</b>
+					</div>
+					<div class="col-xs-6 col-sm-3  img-center">
+						<img class="img img-contacts img-responsive" onclick="onImage(this)" src="Images/AlmondFlour.jpg"/>
+							<p><b>Almond Milk</b>
+					</div>
+					<div class="col-xs-6 col-sm-3  img-center">
+						<img class="img img-contacts img-responsive" onclick="onImage(this)"  src="Images/SteviaFlour.jpg"/>
+							<p><b>Stevia</b></p>
+					</div>
+					<div class="col-xs-6 col-sm-3 img-center addbottommargin ">
+						<img class="img img-contacts img-responsive" onclick="onImage(this)"  src="Images/AlmondFlour.jpg"/>
+							<p><b>Almond Flour</b></p>
+					</div>
+				</div>
+				</div>
 		</div>
-	</div>
-</div>
-	<!-- /container -->
-	
+	</div>	
+</div>	 
 </body>
 </html>

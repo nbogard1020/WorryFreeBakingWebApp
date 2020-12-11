@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8"> 
+    <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Cookie Recipes</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<title>Lets Talk</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<link href="WorryFreeBaking.css" rel="stylesheet">
-</head>
- 
+	
 <style>
 /* Style the search box inside the navigation bar */
 .topnav input[type=text] {
@@ -20,7 +19,6 @@
   margin-right: 16px;
   font-size: 17px;
 }
-
 
 body {
   margin: 0;
@@ -73,86 +71,93 @@ body {
 		}  
 	}		
 </style>
+	<script>
+		function validateForm() {
+		  var x = document.forms["myForm"]["fname"].value;
+		  if (x == "" || x == null) {
+			alert("Name must be filled out");
+			return false;
+		  }
+		}
+		
+		function validateForm() {
+		  var x = document.forms["myForm"]["Issue"].value;
+		  if (x == "" || x == null) {
+			alert("Issue must be filled out");
+			return false;
+		  }
+		}
+		function toggle(id) {
+			var element = document.getElementById(id);
+			if(element.style.display == 'block') {
+				element.style.display = 'none';
+				element.style.visibility = 'hidden';
+			} else {
+				element.style.display = 'block';
+				element.style.visibility = 'visible';
+			}
+		}
+	</script>
+	
 </head>
-  
+
 <body>
 
 <div class="container-fluid">
 
 	
 	<div class="row-fluid">	
-		<div class="col-sm-3 mid addbottommargin">
-			<img class="img img-responsive img-contacts img-center" src="Images/Logo.jpg"/>
+		<div class="col-sm-3 mid">
+			<img class="img img-responsive img-center img-contacts" src="Images/Logo.jpg"/>
 		</div>
 		<div class="col-sm-9 topnav">
-				<a class="active" href="WorryFreeBaking.html">Home</a>
+		<a class="active" href="WorryFreeBaking.html">Home</a>
 		  <a class="active" href="LetsShop.html">Products</a>
 		  <a href="LetsBake.html">Recipes</a>
 		  <a href="LetsLearn.html">Learn</a>
 		  <a href="Login.html">Login</a>
 		   <input type="text" placeholder="Search..">
 		</div>
-	</div>		
-		
-		<div class="col-sm-12">
-		
-		<div class="col-sm-4"> 				
-			<div class="title-header green">Recipes and More</div>
-			<div class="with-border">
-				<ul class="list-unstyled events-list">
-					<li>
-						<a href="">Brownies</a>
-					</li>
-					<li>
-						<a href="">Cookies</a>
-					</li>
-					<li>
-						<a href="">Cakes</a>
-					</li>
-					<li>
-						<a href="">Cupcakes</a>
-					</li>
-					<li>
-						<a href="">Pies</a>
-					</li>
-					<li>
-						<a href="">Treats</a>
-					</li>
-					<li>
-						<a href="/LetsLearn.html">Learn to Bake</a>
-					</li>
-					<li>
-						<a href="/Blog.html">Show Your Bakes Goods</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-				
-		
-			<div class="col-sm-8">			
-
-				<table class="table table-condensed table-striped">
-					<tr>
-						<th style="width: 75%">Name</th>
-						<th>Rating</th>
-					</tr>
-					
-					<tr><td><a href="">Blondies</a></td><td>3 Stars</td></tr>
-					<tr><td><a href="">Cake Cookies</a></td><td>5 Stars</td></tr>
-					<tr><td><a href="">Fudgy Cookies</a></td><td>4 Stars</td></tr>
-					<tr><td><a href="">Double Cholcate Cookies</a></td><td>2 Stars</td></tr>
-					<tr><td><a href="">Turtle Cookies</a></td><td>3 Stars</td></tr>
-					<tr><td><a href="">Almond Butter Cookies</a></td><td>5 Stars</td></tr>
-					<tr><td><a href="">Dairy Free Cheese Cake Cookies</a></td><td>4 Stars</td></tr>
-					<tr><td><a href="">Zuchini Cookies</a></td><td>5 Stars</td></tr>
-					<tr><td><a href="">Smore Cookies</a></td><td>4 Stars</td></tr>
-					
-				</table>
-				<br/>
-				
-		</div>
-	</div>
-</div>
+	</div>	
 	
+	
+	<div class="row addbottommargin">
+		<div class="col-sm-12">
+				
+			<h4 class="greenbanner">Baking Blog</h4>
+				<div class="row ml10">  
+			
+				<!-- Blog 1 -->
+					<h4>Question of the week:<span class="date"> - What is your favorite egg free holiday dessert?</span></h4>
+						<form action="/action_page.php">
+						  <input type="file" id="myFile" name="filename">
+						  <input type="submit">
+						</form>
+				</div>	
+				
+			</hr>
+				
+			<div class="well well-sm">
+				<h4>Lets Talk: How Can We Help?</h4>
+				
+				<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post" required>
+					Name: <input type="text" name="fname">
+					Issue: <input type="text" name="Issue">
+					<input type="submit" value="Submit">
+				</form>
+	
+			</div>
+
+			<div class="well well-sm">
+				<h4>Topic of the Week: Apple Sauce or Flax Egg?</h4>
+					
+				
+	
+			</div>
+		
+	</div>
+</div>	
+	
+</div>
 </body>
 </html>

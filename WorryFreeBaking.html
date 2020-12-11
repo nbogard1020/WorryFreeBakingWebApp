@@ -4,9 +4,10 @@
     <meta charset="utf-8">
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Worry Free Baking</title>
-
-    <link href="/ui/css/oreillybs-3.css" rel="stylesheet">
-	<link href="/wcm/WebMaster/resources/oreilly.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link href="WorryFreeBaking.css" rel="stylesheet">
 
 	 
 <style>
@@ -20,14 +21,20 @@
   font-size: 17px;
 }
 
+div {
+  resize: both;
+  overflow: auto;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #FF1493;
 }
 
 .topnav a {
@@ -45,7 +52,7 @@ body {
 }
 
 .topnav a.active {
-  background-color: #4CAF50;
+  background-color:  #FF1493;
   color: white;
 }
 			
@@ -75,73 +82,76 @@ body {
 <body>
 
 <div class="container-fluid">
+
 	
 	<div class="row-fluid">	
-		<div class="col-sm-3 mid">
-			<img class="img img-responsive img-center" src="/Images/Logo.jpg"/>
+		<div class="col-sm-3 mid addbottommargin">
+			<img class="img img-contactsimg-responsive img-center img-contacts" src="Images/Logo.jpg"/>
 		</div>
 		<div class="col-sm-9 topnav">
-		  <a class="active" href="#home">Products</a>
-		  <a href="#news">Recipes</a>
-		  <a href="#contact">Learn</a>
-		  <a href="#about">About Us</a>
-		  <a href="#about">Login</a>
+			<a class="active" href="WorryFreeBaking.html">Home</a>
+		  <a class="active" href="LetsShop.html">Products</a>
+		  <a href="LetsBake.html">Recipes</a>
+		  <a href="LetsLearn.html">Learn</a>
+		  <a href="Login.html">Login</a>
 		   <input type="text" placeholder="Search..">
 		</div>
 	</div>	
-</div>
+		
 
-	<div class="row">
-		<div class="col-sm-4 noHover boxImg">
-				<div class="container-ad-box shadow box-link">
+			<div class="row-fluid addtopmargin">
+				<div class="col-sm-4 container-ad-box">
 					<div class="thumbnail-container">
-					   <img class="img img-responsive img-center mb10 pl5" alt="Lets Shop!" title="Lets Shop!" src="/Images/" />
+					   <img class="img img-contacts img-responsive img-center mb10 pl5" alt="Lets Shop!" title="Lets Shop!" src="Images/LetsShop.jpg" />
 					</div>
 					<p>
-						<span class="greenText"><i class="glyphicon glyphicon-lock"> </i>Lets Shop!</span>
+						<span class="greenText"> Lets Shop!</span>
 						<br/>Lets shop products that are allergy friendly!
 					</p>
 					<div class="hr-base pull-right">
-						<a href="/Pages/LetsShop.html">learn more  <span class=""> &raquo;</span></a>
+						<a href="LetsShop.html">learn more  <span class=""> &raquo;</span></a>
 					</div>
 				</div>
 
 			
-				<div class="container-ad-box shadow box-link">
+				<div class="col-sm-4 container-ad-box">
 					<div class="thumbnail-container">
-					   <img class="img img-responsive img-center mb10 pl5" alt="Lets Bake!" title="Lets Bake!" src="/Images/" />
+					   <img class="img img-contacts img-responsive img-center mb10 pl5" alt="Lets Bake!" title="Lets Bake!" src="Images/LetsBake.jpg" />
 					</div>
 					<p>
-						<span class="greenText"><i class="glyphicon glyphicon-lock"> </i> Lets Bake!</span>
+						<span class="greenText">  Lets Bake!</span>
 						<br/>Lets bake desserts that are allergy friendly!
 					</p>
 						<div class="hr-base pull-right">
-							<a href="/Pages/LetsBake.html">learn more  <span class=""> &raquo;</span></a>
+							<a href="LetsBake.html">learn more  <span class=""> &raquo;</span></a>
 						</div>	
 				</div>
 
 			
-				<div class="container-ad-box shadow box-link">
+				<div class="col-sm-4 container-ad-box">
 					<div class="thumbnail-container">
-					   <img class="img img-responsive img-center mb10 pl5" alt="Lets Learn!" title="Lets Learn!" src="/Images/" />
+					   <img class="img img-contacts img-responsive img-center mb10 pl5" alt="Lets Learn!" title="Lets Learn!" src="Images/LetsLearn.jpg" />
 					</div>
 					<p>
-						<span class="greenText"><i class="glyphicon glyphicon-lock"> </i>Lets Learn!</span>
-						<br/>Lets learn about baking allergy friendly baked goods!
+						<span class="greenText"> Lets Learn!</span>
+						<br/>Lets learn about allergy free baking!
 					</p>
 					<div class="hr-base pull-right">
-						<a href="/Pages/LetsLearn.html">learn more  <span class=""> &raquo;</span></a>
+						<a href="LetsLearn.html">learn more  <span class=""> &raquo;</span></a>
 					</div>
 				</div>
+			</div>
 			
+	
 	<!-- next column -->
-		
+	<div class="row addtopmargin">
+
 		<div class="col-sm-6 addbottommargin noHover boxImg">
 			
-			<a href="/Pages/LetsShop/NewProducts.html">
+			<a href="LetsShop.html">
 				<div class="container-ad-box shadow box-link">
 					<div class="thumbnail-container">
-					   <img class="img img-responsive img-center mb10 pl5" alt="New Products" title="New Products" src="/Images/NewProducts.jpg" />
+					   <img class="img img-contacts img-responsive img-center mb10 pl5" alt="New Products" title="New Products" src="Images/NewProducts.jpg" />
 					</div>
 					<p>
 						<span class="greenText">New Products</span>
@@ -150,10 +160,10 @@ body {
 				</div>
 			</a>
 			
-			<a href="/Pages/LetsBake/NewRecipes.html">
+			<a href="LetsLearn.html">
 				<div class="container-ad-box shadow box-link">
 					<div class="thumbnail-container">
-					   <img class="img img-responsive img-center mb10 pl5" alt="New Monthly Recipes" title="New Monthly Recipes" src="/Images/MonthlyRecipes.jpg" />
+					   <img class="img img-contacts img-responsive img-center mb10 pl5" alt="New Monthly Recipes" title="New Monthly Recipes" src="Images/NewRecipes.jpg" />
 					</div>
 					<p>
 						<span class="greenText">New Monthly Recipes</span>
@@ -166,10 +176,10 @@ body {
 	<!-- next column -->
 		
 		<div class="col-sm-6 addbottommargin noHover boxImg">
-			<a href="/Pages/LetsLearn/Videos.html">
+			<a href="Videos.html">
 				<div class="container-ad-box shadow box-link">
 					<div class="thumbnail-container">
-					   <img class="img img-responsive img-center mb10 pl5" alt="New Monthly Video" title="New Monthly Video" src="/Images/Videos.jpg" />
+					   <img class="img img-contacts img-responsive img-center mb10 pl5" alt="New Monthly Video" title="New Monthly Video" src="Images/NewVideo.jpg" />
 					</div>
 					<p>
 						<span class="greenText">New Monthly Video</span>
@@ -178,23 +188,24 @@ body {
 				</div>
 			</a>
 		
-			<a href="/Pages/LetsLearn/ShowedItems.html">
+			<a href="Blog.html">
 				<div class="container-ad-box shadow box-link">
 					<div class="thumbnail-container">
-					   <img class="img img-responsive img-center mb10 pl5" alt="Show Your Baked Goods" title="Show Your Baked Goods" src="/Images/ShowedItems.jpg"/>
+					   <img class="img img-contacts img-responsive img-center mb10 pl5" alt="Show Your Baked Goods" title="Show Your Baked Goods" src="Images/ShowOff.jpg"/>
 					</div>
 					<p>
-						<span class="greenText"><i class="glyphicon glyphicon-lock"> </i> Show Your Baked Goods</span>
+						<span class="greenText">  Show Your Baked Goods</span>
 						
 					</p>
 				</div>
 			</a>
 		
 		</div>
+		</div>
 
 	<div class="row-fluid">	
 		<div class="col-sm-12 mid">	
-			<p> Contact Us:         Phone:                 Email:</P>
+			<p> Contact Us: Worry Free Baking        Phone: 800-111-2222    Email:LetsBake@WorryFreeBaking.org</P>
 		</div>
 	</div>	
 	

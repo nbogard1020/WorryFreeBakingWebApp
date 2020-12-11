@@ -4,78 +4,89 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Watch and Learn</title>
-	<link href="/ui/css/oreillybs-3.css" rel="stylesheet">
-	<link href="/wcm/Webmaster/resources/oreilly.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link href="WorryFreeBaking.css" rel="stylesheet">
 
-	<style> 
-		.box-link {
-			text-decoration: none;
-			color:black;
-		}
-		a:hover {
-			text-decoration: none;
-			}
-		/*	
-		.container-ad-box p {
-			height:80px;
-		}
-		.box-adj p {
-			height:75px;
-		}
-		*/
-		img {
-			width:60px;
-			height:60px;
-		}
-		/* Extra small devices (phones, 600px and down) */
-		@media only screen and (max-width: 600px) {
-		.container-ad-box p {				
-			height: 75px;
-				}
-			}
-	/* Small devices (portrait tablets and large phones, 600px and up) */
-		@media only screen and (min-width: 600px) {
-		.container-ad-box p {				
-			height: 75px;
-				}
-			}
+	<style>
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
 
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #FF1493;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color:  #FF1493;
+  color: white;
+}
+			
 	/* Medium devices (landscape tablets, 768px and up) */
-		@media only screen and (min-width: 768px) {
+	@media only screen and (min-width: 768px) {
 		.container-ad-box p {
-			height: 100px;
-				}
+			height: 130px;	
 			}
-
+		}
+		
 	/* Large devices (laptops/desktops, 992px and up) */
-		@media only screen and (min-width: 992px) {
-			.container-ad-box p {				
-			height: auto;
-				}
-			}
+	@media only screen and (min-width: 992px) {
+		.container-ad-box p {				
+			height: 95px;		
+		}
+	}
 
 	/* Extra large devices (large laptops and desktops, 1200px and up) */
-		@media only screen and (min-width: 1200px) {
-			.container-ad-box p {
-			height: auto;
-				}    
-			}
-	</style>
+	@media only screen and (min-width: 1200px) {
+		.container-ad-box p {
+			height: auto;		
+		}  
+	}		
+</style>
 </head>
 <body>
 
-<div class="container-fluid addbottommargin">
+<div class="container-fluid">
+
 	
 	<div class="row-fluid">	
-		<div class="col-sm-3 mid">
-			<img class="img img-responsive img-center" src="/Images/Logo.jpg"/>
+		<div class="col-sm-3 mid addbottommargin">
+			<img class="img img-responsive img-contacts img-center" src="Images/Logo.jpg"/>
 		</div>
 		<div class="col-sm-9 topnav">
-		  <a class="active" href="#home">Products</a>
-		  <a href="#news">Recipes</a>
-		  <a href="#contact">Learn</a>
-		  <a href="#about">About Us</a>
-		  <a href="#about">Login</a>
+		<a class="active" href="WorryFreeBaking.html">Home</a>
+		 <a class="active" href="/LetsShop.html">Products</a>
+		  <a href="LetsBake.html">Recipes</a>
+		  <a href="LetsLearn.html">Learn</a>
+		  <a href="Login.html">Login</a>
 		   <input type="text" placeholder="Search..">
 		</div>
 	</div>	
@@ -83,13 +94,13 @@
 <!-- NEXT SECTION  -->
 			
 	<!-- next row  NEWEST to OLDEST-->
-	<div class="row pt5">
+	<div class="col-sm-12">
 		<div class="col-sm-4">
 				<!-- A Message From Brad Beckham -->
 				<h5 class="mid notopmargin">Gluten Free Baking Tips</h5>
 						<div style="max-height:180px;" class="mb10">
-							<video title="November Message from Brad Beckham" style="max-height:180px;background-color:black; width:100%" controls>
-								<source src="/wcm/TeamNet/Stories/2020/Brad_Nov_2020.mp4" type="video/mp4">
+							<video  style="max-height:180px;background-color:black; width:100%" controls>
+								<source src="WorryFreeBakingVideo.mp4" type="video/mp4">
 									
 							</video>
 						</div>
@@ -98,8 +109,8 @@
 				<!-- A Message From Brad Beckham -->
 				<h5 class="mid notopmargin">Whats a Flax Egg?</h5>
 						<div style="max-height:180px;" class="mb10">
-							<video title="November Message from Brad Beckham" style="max-height:180px;background-color:black; width:100%" controls>
-								<source src="/wcm/TeamNet/Stories/2020/Brad_Nov_2020.mp4" type="video/mp4">
+							<video  style="max-height:180px;background-color:black; width:100%" controls>
+								<source src="WorryFreeBakingVideo.mp4" type="video/mp4">
 									
 							</video>
 						</div>
@@ -108,8 +119,8 @@
 				<!-- A Message From Brad Beckham -->
 				<h5 class="mid notopmargin">How to Substitute Sugar</h5>
 						<div style="max-height:180px;" class="mb10">
-							<video title="November Message from Brad Beckham" style="max-height:180px;background-color:black; width:100%" controls>
-								<source src="/wcm/TeamNet/Stories/2020/Brad_Nov_2020.mp4" type="video/mp4">
+							<video  style="max-height:180px;background-color:black; width:100%" controls>
+								<source src="WorryFreeBakingVideo.mp4" type="video/mp4">
 									
 							</video>
 						</div>
@@ -117,22 +128,23 @@
 		</div>
 		
 	<!-- next row  NEWEST to OLDEST-->
-	<div class="row pt5">
+	<div class="col-sm-12">
 		<div class="col-sm-4">
 				<!-- A Message From Brad Beckham -->
 				<h5 class="mid notopmargin">The Truth Behind Dairy Free</h5>
 						<div style="max-height:180px;" class="mb10">
-							<video title="November Message from Brad Beckham" style="max-height:180px;background-color:black; width:100%" controls>
-								<source src="/wcm/TeamNet/Stories/2020/Brad_Nov_2020.mp4" type="video/mp4">
+							<video  style="max-height:180px;background-color:black; width:100%" controls>
+								<source src="WorryFreeBakingVideo.mp4" type="video/mp4">
 									
 							</video>
 						</div>
+					</div>
 		<div class="col-sm-4">
 				<!-- A Message From Brad Beckham -->
 				<h5 class="mid notopmargin">Why are My Baked Goods Dry?</h5>
 						<div style="max-height:180px;" class="mb10">
-							<video title="November Message from Brad Beckham" style="max-height:180px;background-color:black; width:100%" controls>
-								<source src="/wcm/TeamNet/Stories/2020/Brad_Nov_2020.mp4" type="video/mp4">
+							<video  style="max-height:180px;background-color:black; width:100%" controls>
+								<source src="WorryFreeBakingVideo.mp4" type="video/mp4">
 									
 							</video>
 						</div>
@@ -141,13 +153,12 @@
 				<!-- A Message From Brad Beckham -->
 				<h5 class="mid notopmargin">How to Not Over Mix</h5>
 						<div style="max-height:180px;" class="mb10">
-							<video title="November Message from Brad Beckham" style="max-height:180px;background-color:black; width:100%" controls>
-								<source src="/wcm/TeamNet/Stories/2020/Brad_Nov_2020.mp4" type="video/mp4">
+							<video  style="max-height:180px;background-color:black; width:100%" controls>
+								<source src="WorryFreeBakingVideo.mp4" type="video/mp4">
 									
 							</video>
 						</div>
 			</div>
-		</div>
 		</div>
 	</div>
 
